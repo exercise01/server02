@@ -1,5 +1,5 @@
 import {Request, Response} from 'express';
-import {COURSES} from "../db-data";
+import {COURSES} from "./db-data";
 import {setTimeout} from 'timers';
 
 

@@ -1,6 +1,6 @@
 
 import {Request, Response} from 'express';
-import {COURSES} from "../db-data";
+import {COURSES} from "./db-data";
 
 export function deleteCourse(req: Request, res: Response) {
 

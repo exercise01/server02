@@ -1,7 +1,7 @@
 import {Request, Response} from 'express';
-import {COURSES} from '../db-data';
+import {COURSES} from './db-data';
 
-export var coursesKeyCounter = 100;
+export var coursesKeyCounter = 10;
 
 export function createCourse(req: Request, res: Response) {
 
@@ -9,9 +9,15 @@ export function createCourse(req: Request, res: Response) {
 
   const changes = req.body;
 
+  // const courseId = 1 + 1 ;
+
+  // console.log(courseId);
+
+  // coursesKeyCounter = courseId ;
+
   const newCourse = {
     id: coursesKeyCounter,
-    seqNo: coursesKeyCounter,
+    //seqNo: coursesKeyCounter,
     ...changes
   };
 
